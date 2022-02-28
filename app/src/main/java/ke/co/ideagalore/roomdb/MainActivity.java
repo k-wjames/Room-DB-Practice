@@ -7,6 +7,8 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -33,6 +35,17 @@ public class MainActivity extends AppCompatActivity {
                 dialog.getWindow().setLayout(width, height);
                 //Show the dialog
                 dialog.show();
+
+                EditText name, designation,organisation,city, email, officeLine, mobileLine, fax;
+                name=dialog.findViewById(R.id.edt_name);
+                designation=dialog.findViewById(R.id.edt_designation);
+                organisation=dialog.findViewById(R.id.edt_organisation);
+                city=dialog.findViewById(R.id.edt_city);
+                email=dialog.findViewById(R.id.edt_email);
+                officeLine=dialog.findViewById(R.id.edt_direct_line);
+                mobileLine=dialog.findViewById(R.id.edt_mobile_line);
+                fax=dialog.findViewById(R.id.edt_fax);
+                Button saveCard=dialog.findViewById(R.id.btn_save);
             }
         });
     }
