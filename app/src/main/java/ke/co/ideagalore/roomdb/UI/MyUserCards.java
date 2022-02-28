@@ -1,4 +1,4 @@
-package ke.co.ideagalore.roomdb;
+package ke.co.ideagalore.roomdb.UI;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -12,7 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+import ke.co.ideagalore.roomdb.R;
+
+public class MyUserCards extends AppCompatActivity {
 
     FloatingActionButton fab;
     RecyclerView recyclerView;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_my_user_cards);
 
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     uMobileLine=Double.parseDouble(mobileLine.getText().toString().toString());
                     uFax=Double.parseDouble(fax.getText().toString().trim());
 
+                    //Continue with code to save new User Card
                 });
             }
         });
