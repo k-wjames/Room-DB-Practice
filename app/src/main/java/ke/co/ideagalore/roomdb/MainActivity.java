@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Dialog dialog=new Dialog(view.getContext());
                 dialog.setContentView(R.layout.user_dialog);
+                //Initialize the width and height
+                int width= WindowManager.LayoutParams.MATCH_PARENT;
+                int height=WindowManager.LayoutParams.WRAP_CONTENT;
+                //Set layout
+                dialog.getWindow().setLayout(width, height);
+                //Show the dialog
+                dialog.show();
             }
         });
     }
