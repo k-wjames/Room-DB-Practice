@@ -28,13 +28,13 @@ public class CardModel implements Serializable {
 
     String email;
     @ColumnInfo(name = "directLine")
-    String directLine;
+    double directLine;
 
     @ColumnInfo(name="mobileLine")
-    String mobileLine;
+    double mobileLine;
 
     @ColumnInfo(name="fax")
-    String fax;
+    double fax;
 
     public int getID() {
         return ID;
@@ -84,27 +84,27 @@ public class CardModel implements Serializable {
         this.email = email;
     }
 
-    public String getDirectLine() {
+    public double getDirectLine() {
         return directLine;
     }
 
-    public void setDirectLine(String directLine) {
+    public void setDirectLine(double directLine) {
         this.directLine = directLine;
     }
 
-    public String getMobileLine() {
+    public double getMobileLine() {
         return mobileLine;
     }
 
-    public void setMobileLine(String mobileLine) {
+    public void setMobileLine(double mobileLine) {
         this.mobileLine = mobileLine;
     }
 
-    public String getFax() {
+    public double getFax() {
         return fax;
     }
 
-    public void setFax(String fax) {
+    public void setFax(double fax) {
         this.fax = fax;
     }
 }
